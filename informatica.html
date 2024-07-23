@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo IFS 2024</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <ul>
+        <li class="btinicio">
+            <img src="img/casa.png" alt="início" width="30" height="30">
+            <h3><a href="index.html"> Início </a></h3>
+        </li>
+    </ul>
+
+
+    <h1>Conteúdos Específicos de Informática</h1>
+    <form>
+        <!-- Engenharia de Software -->
+        <h2>1. Engenharia de Software</h2>
+        <ul>
+            <label><input type="checkbox" id="engenharia_ciclo_de_vida" onclick="updateProgressBar(this.id)"> Ciclo de
+                vida</label><br>
+            <label><input type="checkbox" id="engenharia_metodologias_desenvolvimento"
+                    onclick="updateProgressBar(this.id)"> Metodologias de desenvolvimento</label><br>
+            <label><input type="checkbox" id="engenharia_arquitetura_software" onclick="updateProgressBar(this.id)">
+                Arquitetura de software</label><br>
+            <label><input type="checkbox" id="engenharia_interoperabilidade" onclick="updateProgressBar(this.id)">
+                Interoperabilidade</label><br>
+            <label><input type="checkbox" id="engenharia_padroes_projeto" onclick="updateProgressBar(this.id)"> Padrões
+                de projeto</label><br>
+            <label><input type="checkbox" id="engenharia_uml" onclick="updateProgressBar(this.id)"> UML</label><br>
+            <label><input type="checkbox" id="engenharia_tecnicas_teste" onclick="updateProgressBar(this.id)"> Técnicas
+                de teste de software</label><br>
+            <label><input type="checkbox" id="engenharia_controle_versoes" onclick="updateProgressBar(this.id)">
+                Controle de versões de software</label><br>
+            <label><input type="checkbox" id="engenharia_analise_oo" onclick="updateProgressBar(this.id)"> Análise
+                Orientada a Objetos</label><br>
+        </ul>
+        <!-- Programação -->
+        <h2>2. Programação</h2>
+        <ul>
+            <label><input type="checkbox" id="programacao_projeto_algoritmos" onclick="updateProgressBar(this.id)">
+                Projeto de Algoritmos, tipos de dados</label><br>
+            <label><input type="checkbox" id="programacao_declaracao_variaveis" onclick="updateProgressBar(this.id)">
+                Declaração e inicialização de variáveis</label><br>
+            <label><input type="checkbox" id="programacao_constantes" onclick="updateProgressBar(this.id)"> Constantes
+                literais e constantes simbólicas</label><br>
+            <label><input type="checkbox" id="programacao_pre_processamento" onclick="updateProgressBar(this.id)">
+                Diretivas de pré-processamento</label><br>
+            <label><input type="checkbox" id="programacao_operadores" onclick="updateProgressBar(this.id)">
+                Operadores</label><br>
+            <label><input type="checkbox" id="programacao_controle_fluxo" onclick="updateProgressBar(this.id)">
+                Instruções de controle de fluxo</label><br>
+            <label><input type="checkbox" id="programacao_ponteiros" onclick="updateProgressBar(this.id)">
+                Ponteiros</label><br>
+            <label><input type="checkbox" id="programacao_colecoes_dados" onclick="updateProgressBar(this.id)"> Coleções
+                de dados homogêneas e heterogêneas</label><br>
+            <label><input type="checkbox" id="programacao_funcoes" onclick="updateProgressBar(this.id)">
+                Funções</label><br>
+            <label><input type="checkbox" id="programacao_alocacao_memoria" onclick="updateProgressBar(this.id)">
+                Alocação dinâmica de memória</label><br>
+            <label><input type="checkbox" id="programacao_estruturas_dados" onclick="updateProgressBar(this.id)">
+                Estruturas de Dados: Lista Simplesmente Encadeada, Lista Duplamente Encadeada, Fila, Pilha, Listas
+                Circulares, Árvores Binárias</label><br>
+            <label><input type="checkbox" id="programacao_poo" onclick="updateProgressBar(this.id)"> Programação
+                Orientada a Objetos: classes, atributos e métodos; contexto de instância e contexto estáticos;
+                modificadores de acesso; objetos; construtores; encapsulamento; abstração: generalização e
+                especialização; polimorfismo: herança e interfaces; sobrecarga e sobreposição; coleções genéricas;
+                Padrões de projeto</label><br>
+            <label><input type="checkbox" id="programacao_desenvolvimento_web" onclick="updateProgressBar(this.id)">
+                Desenvolvimento Web: protocolo HTTP e seus métodos, arquiteturas Cliente-Servidor e MVC, HTML, CSS,
+                JavaScript, Servlets, JSP e JSTL</label><br>
+            <label><input type="checkbox" id="programacao_linguagens_programacao" onclick="updateProgressBar(this.id)">
+                Linguagens de Programação: C, Java, Python</label><br>
+        </ul>
+        <!-- Banco de Dados -->
+        <h2>3. Banco de Dados</h2>
+        <ul>
+            <label><input type="checkbox" id="banco_dados_conceitos_basicos" onclick="updateProgressBar(this.id)">
+                Conceitos básicos e definições</label><br>
+            <label><input type="checkbox" id="banco_dados_modelo_entidade_relacionamento"
+                    onclick="updateProgressBar(this.id)"> Modelo Entidade Relacionamento</label><br>
+            <label><input type="checkbox" id="banco_dados_modelagem_conceitual" onclick="updateProgressBar(this.id)">
+                Modelagem Conceitual</label><br>
+            <label><input type="checkbox" id="banco_dados_modelagem_logica" onclick="updateProgressBar(this.id)">
+                Modelagem Lógica (Relacional)</label><br>
+            <label><input type="checkbox" id="banco_dados_modelo_fisico" onclick="updateProgressBar(this.id)"> Modelo
+                Físico</label><br>
+            <label><input type="checkbox" id="banco_dados_sql" onclick="updateProgressBar(this.id)"> Linguagem
+                SQL</label><br>
+            <label><input type="checkbox" id="banco_dados_stored_procedures" onclick="updateProgressBar(this.id)">
+                Procedimentos Armazenados (Stored Procedures) e Gatilhos (Triggers)</label><br>
+            <label><input type="checkbox" id="banco_dados_restricoes_integridade" onclick="updateProgressBar(this.id)">
+                Restrições de integridade</label><br>
+            <label><input type="checkbox" id="banco_dados_seguranca_desempenho" onclick="updateProgressBar(this.id)">
+                Segurança e desempenho de banco de dados</label><br>
+            <label><input type="checkbox" id="banco_dados_sgbd" onclick="updateProgressBar(this.id)"> Sistemas de
+                Gerenciamento de Bancos Dados (SGBD): Conceitos de alta disponibilidade, Segurança, Gerência de
+                transações, Gerência de bloqueios e Gerência de desempenho</label><br>
+            <label><input type="checkbox" id="banco_dados_gestao_operacao" onclick="updateProgressBar(this.id)"> Gestão
+                e operação de bancos de dados</label><br>
+        </ul>
+        <!-- Sistemas de Informação -->
+        <h2>4. Sistemas de Informação</h2>
+        <ul>
+            <label><input type="checkbox" id="sistemas_informacao_dado_informacao_conhecimento"
+                    onclick="updateProgressBar(this.id)"> Dado, informação e conhecimento</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_sistemas_gestao_integrada"
+                    onclick="updateProgressBar(this.id)"> Sistemas de gestão integrada</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_suporte_decisao" onclick="updateProgressBar(this.id)">
+                Suporte à decisão</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_sistemas_relacionamento"
+                    onclick="updateProgressBar(this.id)"> Sistemas de relacionamento</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_gestao_suprimentos"
+                    onclick="updateProgressBar(this.id)"> Gestão de suprimentos</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_inteligencia_negocios"
+                    onclick="updateProgressBar(this.id)"> Inteligência de negócios</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_auditoria_sistemas"
+                    onclick="updateProgressBar(this.id)"> Auditoria de sistemas</label><br>
+            <label><input type="checkbox" id="sistemas_informacao_modelos_governanca"
+                    onclick="updateProgressBar(this.id)"> Modelos de governança</label><br>
+        </ul>
+        <!-- Arquitetura e Organização de Computadores -->
+        <h2>5. Arquitetura e Organização de Computadores</h2>
+        <ul>
+            <label><input type="checkbox" id="arquitetura_organizacao_historia_evolucao"
+                    onclick="updateProgressBar(this.id)"> História e Evolução dos Computadores</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_conceitos_arquitetura"
+                    onclick="updateProgressBar(this.id)"> Conceitos de Arquitetura de computadores</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_conceitos_organizacao"
+                    onclick="updateProgressBar(this.id)"> Conceitos de Organização de Computadores</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_hardware_software"
+                    onclick="updateProgressBar(this.id)"> Hardware e Software</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_circuitos_logicos"
+                    onclick="updateProgressBar(this.id)"> Circuitos lógicos, portas lógicas, firmware; componentes
+                computacionais, periféricos</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_representacao_informacao"
+                    onclick="updateProgressBar(this.id)"> Representação Binária, Octal e Hexadecimal da Informação,
+                Ordens de Grandeza, hierarquia de memória, Classificação de Memórias</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_ciclo_processamento"
+                    onclick="updateProgressBar(this.id)"> Ciclo de Processamento, entrada e saída; arquiteturas CISC e
+                RISC</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_arquitetura_multiniveis"
+                    onclick="updateProgressBar(this.id)"> Arquitetura Multiníveis</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_conjunto_instrucoes"
+                    onclick="updateProgressBar(this.id)"> Conjunto de Instruções: execução de instruções de máquina;
+                formatos de instruções e modos de endereçamento</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_entrada_saida"
+                    onclick="updateProgressBar(this.id)"> Entrada e saída (I/O), polling, interrupção e DMA</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_execucao_paralela"
+                    onclick="updateProgressBar(this.id)"> Execução Paralela de Instruções e Multiprocessamento:
+                pipelining, arquiteturas superescalares, GPUs, multiprocessadores</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_discos_rigidos"
+                    onclick="updateProgressBar(this.id)"> Discos Rígidos SCSI, RAID</label><br>
+            <label><input type="checkbox" id="arquitetura_organizacao_avaliacao_desempenho"
+                    onclick="updateProgressBar(this.id)"> Avaliação de Desempenho</label><br>
+        </ul>
+        <!-- Sistemas Operacionais -->
+        <h2>6. Sistemas Operacionais</h2>
+        <ul>
+            <label><input type="checkbox" id="sistemas_operacionais_historico" onclick="updateProgressBar(this.id)">
+                Histórico</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_estruturas" onclick="updateProgressBar(this.id)">
+                Estruturas de sistemas operacionais</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_processos" onclick="updateProgressBar(this.id)">
+                Processos</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_multiprogramacao"
+                    onclick="updateProgressBar(this.id)"> Multiprogramação</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_interrupcao" onclick="updateProgressBar(this.id)">
+                Mecanismo interrupção</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_escalonamento" onclick="updateProgressBar(this.id)">
+                Algoritmos de escalonamento de processos</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_threads" onclick="updateProgressBar(this.id)">
+                Threads</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_gerencia_memoria"
+                    onclick="updateProgressBar(this.id)"> Técnicas de gerência de memória real e virtual, paginação,
+                segmentação</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_sincronizacao" onclick="updateProgressBar(this.id)">
+                Técnicas de sincronização de processos</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_ipc" onclick="updateProgressBar(this.id)"> Técnicas
+                de comunicação entre processos (ipc)</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_sistemas_arquivos"
+                    onclick="updateProgressBar(this.id)"> Sistemas de arquivos</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_gerencia_entrada_saida"
+                    onclick="updateProgressBar(this.id)"> Gerência de entrada e saída</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_virtualizacao" onclick="updateProgressBar(this.id)">
+                Virtualização</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_caracteristicas"
+                    onclick="updateProgressBar(this.id)"> Características dos Sistemas operacionais da família Windows e
+                Linux</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_fundamentos" onclick="updateProgressBar(this.id)">
+                Fundamentos</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_instalacao" onclick="updateProgressBar(this.id)">
+                Instalação</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_shell_script" onclick="updateProgressBar(this.id)">
+                Linguagens de Script: Shell Script e PowerShell</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_compiladores" onclick="updateProgressBar(this.id)">
+                Compiladores</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_gerenciamento_usuarios"
+                    onclick="updateProgressBar(this.id)"> Gerenciamento de usuários, grupos e permissões</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_configuracoes_seguranca"
+                    onclick="updateProgressBar(this.id)"> Configurações de segurança</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_integracao_ambientes"
+                    onclick="updateProgressBar(this.id)"> Integração entre ambientes Windows e Linux</label><br>
+            <label><input type="checkbox" id="sistemas_operacionais_sistemas_arquivos"
+                    onclick="updateProgressBar(this.id)"> Sistemas de arquivos</label><br>
+        </ul>
+        <!-- Redes de Computadores e Infraestrutura -->
+        <h2>7. Redes de Computadores e Infraestrutura</h2>
+        <ul>
+            <label><input type="checkbox" id="redes_computadores_fundamentos" onclick="updateProgressBar(this.id)">
+                Fundamentos de redes de computadores</label><br>
+            <label><input type="checkbox" id="redes_computadores_modelo_osi" onclick="updateProgressBar(this.id)">
+                Modelo de referência OSI e TCP/IP</label><br>
+            <label><input type="checkbox" id="redes_computadores_topologias" onclick="updateProgressBar(this.id)">
+                Topologias e tipos de redes</label><br>
+            <label><input type="checkbox" id="redes_computadores_arquitetura_protocolos"
+                    onclick="updateProgressBar(this.id)"> Arquitetura e protocolos da família TCP/IP</label><br>
+            <label><input type="checkbox" id="redes_computadores_equipamentos_rede"
+                    onclick="updateProgressBar(this.id)"> Equipamentos de rede (hubs, bridges, switches, roteadores,
+                gateways)</label><br>
+            <label><input type="checkbox" id="redes_computadores_enderecamento" onclick="updateProgressBar(this.id)">
+                Endereçamento físico e lógico - IPv4 e IPv6</label><br>
+            <label><input type="checkbox" id="redes_computadores_segmentacao" onclick="updateProgressBar(this.id)">
+                Segmentação: subrede, VLAN</label><br>
+            <label><input type="checkbox" id="redes_computadores_armazenamento" onclick="updateProgressBar(this.id)">
+                Armazenamento de rede: DAS, NAS e SAN</label><br>
+            <label><input type="checkbox" id="redes_computadores_alta_disponibilidade"
+                    onclick="updateProgressBar(this.id)"> Soluções de alta disponibilidade</label><br>
+            <label><input type="checkbox" id="redes_computadores_servidores_web" onclick="updateProgressBar(this.id)">
+                Servidores Web: Apache e IIS</label><br>
+            <label><input type="checkbox" id="redes_computadores_ldap" onclick="updateProgressBar(this.id)"> Serviço de
+                diretório: LDAP, Active Directory</label><br>
+            <label><input type="checkbox" id="redes_computadores_voip" onclick="updateProgressBar(this.id)">
+                VoIP</label><br>
+            <label><input type="checkbox" id="redes_computadores_wireless" onclick="updateProgressBar(this.id)"> Redes
+                sem fio (wireless)</label><br>
+            <label><input type="checkbox" id="redes_computadores_servicos_rede" onclick="updateProgressBar(this.id)">
+                Serviços de rede: DNS, DHCP, NAT, Proxy, Correio eletrônico (SMTP, POP, IMAP)</label><br>
+            <label><input type="checkbox" id="redes_computadores_criptografia" onclick="updateProgressBar(this.id)">
+                Criptografia e segurança em redes</label><br>
+            <label><input type="checkbox" id="redes_computadores_vpn" onclick="updateProgressBar(this.id)">
+                VPN</label><br>
+            <label><input type="checkbox" id="redes_computadores_ferramentas_monitoramento"
+                    onclick="updateProgressBar(this.id)"> Ferramentas de monitoramento e análise de redes: Sniffer,
+                MRTG, Nagios</label><br>
+            <label><input type="checkbox" id="redes_computadores_internet_servicos"
+                    onclick="updateProgressBar(this.id)"> Internet e serviços (WWW, WebServices)</label><br>
+            <label><input type="checkbox" id="redes_computadores_comandos_utilitarios"
+                    onclick="updateProgressBar(this.id)"> Comandos e utilitários para administração de redes (Windows e
+                Linux)</label><br>
+            <label><input type="checkbox" id="redes_computadores_qualidade_servico"
+                    onclick="updateProgressBar(this.id)"> Qualidade de serviço</label><br>
+            <label><input type="checkbox" id="redes_computadores_politicas_segurança"
+                    onclick="updateProgressBar(this.id)"> Políticas de segurança de redes</label><br>
+            <label><input type="checkbox" id="redes_computadores_itil" onclick="updateProgressBar(this.id)"> ITIL:
+                melhores práticas em gerenciamento de serviços de TI</label><br>
+        </ul>
+        <!-- Desenvolvimento para Dispositivos Móveis -->
+        <h2>8. Desenvolvimento para Dispositivos Móveis</h2>
+        <ul>
+            <label><input type="checkbox" id="desenvolvimento_moveis_historico" onclick="updateProgressBar(this.id)">
+                Histórico</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_interfaces" onclick="updateProgressBar(this.id)">
+                Interfaces: componentes visuais</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_layouts" onclick="updateProgressBar(this.id)">
+                Layouts</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_recursos" onclick="updateProgressBar(this.id)">
+                Gerenciamento de Recursos</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_servicos" onclick="updateProgressBar(this.id)">
+                Serviços</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_comunicacao" onclick="updateProgressBar(this.id)">
+                Comunicação: telefonia, Bluetooth, redes</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_localizacao" onclick="updateProgressBar(this.id)">
+                Sensores, geolocalização e mapeamento</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_threads_processos"
+                    onclick="updateProgressBar(this.id)"> Threads e Processos</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_armazenamento_dados"
+                    onclick="updateProgressBar(this.id)"> Armazenamento de dados</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_linguagens_programacao"
+                    onclick="updateProgressBar(this.id)"> Linguagens de programação, frameworks e IDEs</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_emuladores" onclick="updateProgressBar(this.id)">
+                Emuladores</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_android" onclick="updateProgressBar(this.id)">
+                Android</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_ios" onclick="updateProgressBar(this.id)">
+                iOS</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_windows_phone"
+                    onclick="updateProgressBar(this.id)"> Windows Phone</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_publicacao_lojas"
+                    onclick="updateProgressBar(this.id)"> Publicação nas lojas</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_desenvolvimento_hibrido"
+                    onclick="updateProgressBar(this.id)"> Desenvolvimento híbrido</label><br>
+            <label><input type="checkbox" id="desenvolvimento_moveis_boas_praticas"
+                    onclick="updateProgressBar(this.id)"> Boas práticas</label><br>
+        </ul>
+    </form>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>

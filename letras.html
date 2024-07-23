@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo IFS 2024</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <div id="progressbar">
+        <div id="progress">
+            <div id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <ul>
+        <li class="btinicio">
+            <img src="img/casa.png" alt="início" width="30" height="30">
+            <h3><a href="index.html"> Início </a></h3>
+        </li>
+    </ul>
+
+
+    <h1>Conteúdo Programático</h1>
+    <form>
+        <ul>
+        <!-- Leitura e interpretação de textos -->
+        <h2>1. Leitura e interpretação de textos de gêneros variados</h2>
+        <label><input type="checkbox" id="leitura_interpretacao_textos" onclick="updateProgressBar(this.id)"> Leitura e interpretação de textos de gêneros variados</label><br>
+
+        <!-- Mecanismos de produção de sentidos -->
+        <h2>2. Mecanismos de produção de sentidos nos textos</h2>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos" onclick="updateProgressBar(this.id)"> Polissemia</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_iron" onclick="updateProgressBar(this.id)"> Ironia</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_comparacao" onclick="updateProgressBar(this.id)"> Comparação</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_ambiguidade" onclick="updateProgressBar(this.id)"> Ambiguidade</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_duplo_sentido" onclick="updateProgressBar(this.id)"> Duplo sentido</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_inferencia" onclick="updateProgressBar(this.id)"> Inferência</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_humor" onclick="updateProgressBar(this.id)"> Humor</label><br>
+        <label><input type="checkbox" id="mecanismos_producao_sentidos_metafora" onclick="updateProgressBar(this.id)"> Metáfora</label><br>
+
+        <!-- Pronomes -->
+        <h2>3. Pronomes</h2>
+        <label><input type="checkbox" id="pronomes" onclick="updateProgressBar(this.id)"> Pronomes</label><br>
+
+        <!-- Crase -->
+        <h2>4. Crase</h2>
+        <label><input type="checkbox" id="crase" onclick="updateProgressBar(this.id)"> Crase</label><br>
+
+        <!-- Pontuação -->
+        <h2>5. Pontuação</h2>
+        <label><input type="checkbox" id="pontuacao" onclick="updateProgressBar(this.id)"> Pontuação</label><br>
+
+        <!-- Termos integrantes da oração -->
+        <h2>6. Termos integrantes da oração</h2>
+        <label><input type="checkbox" id="termos_integrantes_oracao" onclick="updateProgressBar(this.id)"> Termos integrantes da oração</label><br>
+
+        <!-- Relações de coordenação e subordinação -->
+        <h2>7. Relações de coordenação e subordinação entre os termos das orações e entre as orações</h2>
+        <label><input type="checkbox" id="relacoes_coord_subord_oracoes" onclick="updateProgressBar(this.id)"> Relações de coordenação e subordinação entre os termos das orações e entre as orações</label><br>
+
+        <!-- Concordância nominal e verbal -->
+        <h2>8. Concordância nominal e verbal</h2>
+        <label><input type="checkbox" id="concordancia_nominal_verbal" onclick="updateProgressBar(this.id)"> Concordância nominal e verbal</label><br>
+
+        <!-- Ortografia -->
+        <h2>9. Ortografia</h2>
+        <label><input type="checkbox" id="ortografia" onclick="updateProgressBar(this.id)"> Ortografia (incluindo homônimos e parônimos)</label><br>
+
+        <!-- Verbos -->
+        <h2>10. Verbos</h2>
+        <label><input type="checkbox" id="verbos" onclick="updateProgressBar(this.id)"> Verbos</label><br>
+    </ul>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Recuperar os estados marcados dos checkboxes armazenados no localStorage
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function (checkbox) {
+                var checkboxId = checkbox.id;
+                var isChecked = localStorage.getItem(checkboxId) === "true";
+                checkbox.checked = isChecked;
+            });
+
+            // Atualizar a barra de progresso inicialmente
+            updateProgressBar();
+        });
+
+        function updateProgressBar(checkboxId) {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            var progress = (checkedCheckboxes.length / checkboxes.length) * 100;
+            document.getElementById('progress').style.width = progress + '%';
+            document.getElementById('progress-text').textContent = progress.toFixed(2) + '%';
+
+
+            // Armazenar o estado marcado no localStorage
+            if (checkboxId) {
+                var checkbox = document.getElementById(checkboxId);
+                localStorage.setItem(checkboxId, checkbox.checked);
+            }
+        }
+    </script>
+</body>
+
+</html>
